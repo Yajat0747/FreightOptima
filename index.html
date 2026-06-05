@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Freight Optima delivers custom-branded SaaS and dedicated database solutions for import-export companies. Save manual administrative time across Inquiries, Quotations, Clients, Accounts, and Operations.">
+  <title>Freight Optima | Branded SaaS & Databases for Import-Export</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- DYNAMIC BACKGROUND ORBS -->
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+  <div class="glow-orb glow-orb-3"></div>
+
+  <!-- NEON DATA PARTICLES CONTAINER -->
+  <div class="particle-container" id="bg-particles"></div>
+
+  <!-- INTERACTIVE LOGISTICS CANVAS MAP -->
+  <canvas class="bg-map-canvas" id="logistics-map-canvas"></canvas>
+
+  <!-- NAVIGATION HEADER -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" id="nav-logo">
+        <img src="assets/logo.png" alt="Freight Optima Logo" class="logo-img">
+      </a>
+      <nav class="nav-links" id="nav-menu">
+        <a href="#features">Solutions</a>
+        <a href="#advantages">Why Us</a>
+        <a href="#ceo-vision">Leadership</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-secondary" id="nav-cta-btn">Get Started</a>
+      </div>
+      <div class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span></span> White-Label Trade Infrastructure
+        </div>
+        <h1 class="hero-title">
+          Automate Trade with Your Own <span class="gradient-text">Branded SaaS</span> & Database
+        </h1>
+        <p class="hero-desc">
+          Freight Optima builds isolated SaaS networks tailored for import-export companies. Save administrative hours by running inquiry registrations, quotations, client portals, accounts ledgers, and multi-modal logistics operations on your own secure database.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" id="hero-btn-primary">Request Custom Demo</a>
+          <a href="#features" class="btn btn-secondary" id="hero-btn-secondary">Explore Solutions</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <h4>85%</h4>
+            <p>Time Saved on RFQs</p>
+          </div>
+          <div class="metric-item">
+            <h4>90%</h4>
+            <p>Fewer Booking Errors</p>
+          </div>
+          <div class="metric-item">
+            <h4>24h</h4>
+            <p>Standby Support SLA</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-image-wrapper" data-tilt id="hero-showcase-wrapper">
+          <img src="assets/hero_illustration.png" alt="Freight Optima Unified Trade Platform" class="hero-image" id="hero-showcase-img">
+          <!-- Floating interactive dashboard card -->
+          <div class="floating-card glass-panel" id="hero-floating-card">
+            <div class="floating-card-title">Average Inquiry Time Saved</div>
+            <div class="floating-card-value" id="floating-savings-pct">85% Faster</div>
+            <div class="floating-card-graph">
+              <div class="graph-bar" style="height: 60%"></div>
+              <div class="graph-bar" style="height: 80%"></div>
+              <div class="graph-bar" style="height: 95%"></div>
+              <div class="graph-bar" style="height: 70%"></div>
+              <div class="graph-bar" style="height: 90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES / CORE USP MODULES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Core Solutions</span>
+        <h2 class="section-title">Integrated Solutions Built Around Your Trade Flow</h2>
+        <p class="section-desc">We replace disjointed manual steps with a white-label software suite hosted entirely under your company name and domain.</p>
+      </div>
+
+      <!-- Tab Buttons Grid -->
+      <div class="features-grid reveal">
+        <button class="glass-panel feature-tab-btn active" data-tab="inquiry" data-tilt id="tab-inquiry">
+          <div class="icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Enquiry Management</h3>
+          <p>Production-hardened inquiry databases and IMAP quote parsing.</p>
+        </button>
+
+        <button class="glass-panel feature-tab-btn" data-tab="operations" data-tilt id="tab-operations">
+          <div class="icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Operations & DSR</h3>
+          <p>Daily status reports (DSR) and database confirmation locks.</p>
+        </button>
+
+        <button class="glass-panel feature-tab-btn" data-tab="client" data-tilt id="tab-client">
+          <div class="icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Procurement Portal</h3>
+          <p>Public-facing quote procurement, revision history, and margins.</p>
+        </button>
+
+        <button class="glass-panel feature-tab-btn" data-tab="ai" data-tilt id="tab-ai">
+          <div class="icon-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3>AI Load Planner</h3>
+          <p>OpenAI-powered sea, air, and road cargo allocation planning.</p>
+        </button>
+      </div>
+
+      <!-- Feature Details Panels -->
+      <div class="features-showcase glass-panel reveal" id="features-display-panel">
+        
+        <!-- Inquiry Panel -->
+        <div class="feature-panel active" id="pane-inquiry">
+          <div class="feature-panel-content">
+            <h3>Enquiry & Quote Procurement</h3>
+            <p class="lead">Idempotent Shippers Enquiry routing with SQLite Migrations</p>
+            <p>Unify cargo inquiries into a centralized SQLite database layout with structured migrations lifecycle. Protect critical actions using JWT token authentication, validate client inputs via schema frameworks, and parse incoming vendor quote emails automatically.</p>
+            <div class="feature-list">
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>JWT Authentication for operations</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>IMAP-based auto-ingest quote emails</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Stable vendor synchronization lists</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Atomic vendor confirmations</span>
+              </div>
+            </div>
+            <div>
+              <a href="#contact" class="btn btn-secondary">Request Demo Flow</a>
+            </div>
+          </div>
+          <div class="feature-panel-visual">
+            <img src="assets/inquiry_module.png" alt="Inquiry and Quotation Dashboard UI" id="inquiry-img">
+          </div>
+        </div>
+
+        <!-- Operations & Data Panel -->
+        <div class="feature-panel" id="pane-operations">
+          <div class="feature-panel-content">
+            <h3>Operations Daily Status Reports (DSR)</h3>
+            <p class="lead">Database-Enforced Booking Lockups and Tracking Vaults</p>
+            <p>Ensure operational security with a dedicated daily status reports (DSR) platform. Enforce database locks preventing concurrent operations overwrites, secure Bills of Lading and cargo documentation, and manage atomic vendor releases.</p>
+            <div class="feature-list">
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Standalone Operations DSR App</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Database shipment lock states</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Atomic release confirmation locks</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Structured logger & health endpoints</span>
+              </div>
+            </div>
+
+            <!-- EMBEDDED CONSOLIDATION WIDGET -->
+            <div class="operations-sub-widget">
+              <h4>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Interactive Feature: Load Consolidation Simulator
+              </h4>
+              <div class="ops-slider-container">
+                <div class="ops-slider-header">
+                  <span>Shipments in Container</span>
+                  <span id="slider-val">2</span>
+                </div>
+                <input type="range" min="1" max="6" value="2" class="slider" id="consolidation-slider">
+                <div class="ops-truck-bed" id="cargo-bed">
+                  <!-- JS injected cargo bars -->
+                </div>
+                <div class="ops-widget-stats">
+                  <div>Consolidated: <span id="widget-shipment-count">2 Cargoes</span></div>
+                  <div>Space Utilized: <span id="widget-space-pct">30%</span></div>
+                  <div>Margin Offset: <span id="widget-margin-pct">+12%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feature-panel-visual">
+            <img src="assets/operations_module.png" alt="Logistics Operations Pipeline and Container Tracking Map UI" id="operations-img">
+          </div>
+        </div>
+
+        <!-- Clients & Accounts Panel -->
+        <div class="feature-panel" id="pane-client">
+          <div class="feature-panel-content">
+            <h3>Public Quote Procurement Portal</h3>
+            <p class="lead">Cheapest & Fastest Pricing, Multi-Version Revisions</p>
+            <p>Provide registered client vendors with a public-facing portal to review shipments and submit quote revisions. Track previous versions cleanly, apply margin buffers via percentage or fixed price offsets, and lock down choices with atomic email triggers.</p>
+            <div class="feature-list">
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Registered-only public portal access</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Auto-incrementing multi-version quote logs</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Cheapest & fastest highlights</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Fixed or percent mode margin addition</span>
+              </div>
+            </div>
+            <div>
+              <a href="#contact" class="btn btn-secondary">Review Financial Suite</a>
+            </div>
+          </div>
+          <div class="feature-panel-visual">
+            <img src="assets/client_module.png" alt="Client Financial Ledger and Accounts Dashboard UI" id="client-img">
+          </div>
+        </div>
+
+        <!-- Custom AI Models Panel -->
+        <div class="feature-panel" id="pane-ai">
+          <div class="feature-panel-content">
+            <h3>AI-Powered Cargo Load Planner</h3>
+            <p class="lead">OpenAI-Driven Container Packing and Allocation Models</p>
+            <p>Capture cargo lines with custom dimensions, weights, stackability, fragility, and upright rules. Normalizes to metric and sends queries to custom OpenAI planning prompts (sea, air, road) to outline unit allocations and remaining payloads.</p>
+            <div class="feature-list">
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>OpenAI sea/air/road loading prompts</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Unit-by-unit allocation guidance</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>LCL W/M & Air chargeable weight logs</span>
+              </div>
+              <div class="feature-list-item">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Validated local backup planning engine</span>
+              </div>
+            </div>
+            <div>
+              <a href="#contact" class="btn btn-secondary">Consult AI Scope</a>
+            </div>
+          </div>
+          <div class="feature-panel-visual">
+            <img src="assets/ai_module.png" alt="AI Predictive Modeling and Logistics Analysis UI" id="ai-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCROLLYTELLING LOGISTICS DEMO SECTION -->
+  <section class="section scrollytelling-section" id="live-demo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Live System Walkthrough</span>
+        <h2 class="section-title">See How Freight Optima Automates Shaking Operations</h2>
+        <p class="section-desc">Scroll down to see the real-time simulation of a cargo lifecycle from first inquiry to client document release.</p>
+      </div>
+
+      <div class="scrollytelling-grid">
+        <!-- Sticky left pane containing the simulated dashboard UI -->
+        <div class="demo-sticky-pane">
+          <div class="demo-device-frame" data-tilt id="demo-mockup-device">
+            <div class="device-header">
+              <span class="device-dot device-dot-red"></span>
+              <span class="device-dot device-dot-yellow"></span>
+              <span class="device-dot device-dot-green"></span>
+              <span class="device-title" id="demo-screen-title">Freight Optima OS v1.2</span>
+            </div>
+            <div class="device-content">
+              
+              <!-- Screen 1: Inquiry Generation -->
+              <div class="demo-screen active" id="screen-step-1">
+                <h4>Inquiry Intake Sheet</h4>
+                <div class="inquiry-form-sim">
+                  <div class="sim-form-group">
+                    <label>Cargo Description</label>
+                    <div class="sim-input" id="sim-input-cargo"><span class="cursor-blink"></span></div>
+                  </div>
+                  <div class="sim-input-row">
+                    <div class="sim-form-group">
+                      <label>Origin Port</label>
+                      <div class="sim-input" id="sim-input-origin"></div>
+                    </div>
+                    <div class="sim-form-group">
+                      <label>Destination Port</label>
+                      <div class="sim-input" id="sim-input-dest"></div>
+                    </div>
+                  </div>
+                  <div class="sim-form-group">
+                    <label>Shipper Account Name</label>
+                    <div class="sim-input" id="sim-input-client"></div>
+                  </div>
+                  <div class="sim-btn-primary" id="sim-submit-btn">
+                    <span>Create Inquiry</span>
+                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Screen 2: Sending (Broadcast) -->
+              <div class="demo-screen" id="screen-step-2">
+                <h4>RFQ Broadcast Channels</h4>
+                <div class="network-nodes-wrapper">
+                  <svg class="network-svg">
+                    <line x1="50%" y1="50%" x2="15%" y2="20%" class="net-line" id="net-l1"></line>
+                    <line x1="50%" y1="50%" x2="20%" y2="70%" class="net-line" id="net-l2"></line>
+                    <line x1="50%" y1="50%" x2="82%" y2="15%" class="net-line" id="net-l3"></line>
+                    <line x1="50%" y1="50%" x2="85%" y2="68%" class="net-line" id="net-l4"></line>
+                    
+                    <circle cx="50%" cy="50%" r="5" class="net-pulse" id="net-p1" style="display: none;"></circle>
+                    <circle cx="50%" cy="50%" r="5" class="net-pulse" id="net-p2" style="display: none;"></circle>
+                    <circle cx="50%" cy="50%" r="5" class="net-pulse" id="net-p3" style="display: none;"></circle>
+                    <circle cx="50%" cy="50%" r="5" class="net-pulse" id="net-p4" style="display: none;"></circle>
+                  </svg>
+                  
+                  <div class="network-node node-center">FO OS<span>Core</span></div>
+                  <div class="network-node node-c1" id="node-vendor-1">Maersk<span>Line</span></div>
+                  <div class="network-node node-c2" id="node-vendor-2">MSC<span>Ocean</span></div>
+                  <div class="network-node node-c3" id="node-vendor-3">CMA CGM<span>Group</span></div>
+                  <div class="network-node node-c4" id="node-vendor-4">Hapag-L.<span>Carrier</span></div>
+                </div>
+              </div>
+
+              <!-- Screen 3: Reply Analysis -->
+              <div class="demo-screen" id="screen-step-3">
+                <h4>Quotation Comparison Matrix</h4>
+                <div class="comparison-container">
+                  <table class="analysis-table">
+                    <thead>
+                      <tr>
+                        <th>Carrier</th>
+                        <th>Freight Cost</th>
+                        <th>Transit</th>
+                        <th>Rank</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="row-carrier-msc">
+                        <td>MSC Ocean</td>
+                        <td>$3,200</td>
+                        <td>24 Days</td>
+                        <td><span class="row-badge row-badge-gray">2</span></td>
+                      </tr>
+                      <tr class="best-row" id="row-carrier-maersk">
+                        <td>Maersk Line</td>
+                        <td>$2,850</td>
+                        <td>21 Days</td>
+                        <td><span class="row-badge row-badge-green">Best Value</span></td>
+                      </tr>
+                      <tr id="row-carrier-cma">
+                        <td>CMA CGM</td>
+                        <td>$3,100</td>
+                        <td>22 Days</td>
+                        <td><span class="row-badge row-badge-gray">3</span></td>
+                      </tr>
+                      <tr id="row-carrier-hapag">
+                        <td>Hapag-L.</td>
+                        <td>$3,350</td>
+                        <td>23 Days</td>
+                        <td><span class="row-badge row-badge-gray">4</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- Screen 4: Operations Management -->
+              <div class="demo-screen" id="screen-step-4">
+                <h4>Operational Logistics Pipeline</h4>
+                <div style="display: flex; flex-direction: column; gap: 10px; height: 100%;">
+                  <div class="ops-milestones-row">
+                    <div class="ops-milestone completed" id="m-s1">
+                      <div class="milestone-dot">✓</div>
+                      <span class="milestone-label">Booking</span>
+                    </div>
+                    <div class="ops-milestone completed" id="m-s2">
+                      <div class="milestone-dot">✓</div>
+                      <span class="milestone-label">Gate-In</span>
+                    </div>
+                    <div class="ops-milestone active" id="m-s3">
+                      <div class="milestone-dot">⚓</div>
+                      <span class="milestone-label">Departed</span>
+                    </div>
+                    <div class="ops-milestone" id="m-s4">
+                      <div class="milestone-dot">4</div>
+                      <span class="milestone-label">Delivered</span>
+                    </div>
+                  </div>
+                  
+                  <div class="ops-map-preview">
+                    <!-- simple route representation line -->
+                    <svg class="ops-map-path">
+                      <path d="M 50 70 Q 150 90 280 40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="4"></path>
+                      <path d="M 50 70 Q 150 90 280 40" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-dasharray="4 4"></path>
+                    </svg>
+                    <div class="cargo-dot-anim"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Screen 5: Accounting -->
+              <div class="demo-screen" id="screen-step-5">
+                <h4>Financial Ledger & Invoices</h4>
+                <div class="ledger-container">
+                  <div class="invoice-preview-card">
+                    <div class="invoice-header-row">
+                      <h5>Invoice #FO-1082</h5>
+                      <span class="invoice-status-pill">Awaiting Payment</span>
+                    </div>
+                    <div class="invoice-item-row">
+                      <span>Ocean Freight Charge (Maersk)</span>
+                      <span>$2,850.00</span>
+                    </div>
+                    <div class="invoice-item-row">
+                      <span>Customs Entry Clearance Fee</span>
+                      <span>$150.00</span>
+                    </div>
+                    <div class="invoice-total-row">
+                      <span>Total Invoice Due</span>
+                      <span>$3,000.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Screen 6: Uploading Docs for Clients -->
+              <div class="demo-screen" id="screen-step-6">
+                <h4>Client Portal Upload Vault</h4>
+                <div class="upload-sim-card">
+                  <div class="upload-file-info">
+                    <span id="vault-uploading-filename">Bill_of_Lading_Draft.pdf</span>
+                    <span id="vault-upload-pct">0%</span>
+                  </div>
+                  <div class="upload-progress-bar-container">
+                    <div class="upload-progress-bar-fill" id="vault-progress-fill"></div>
+                  </div>
+                  <div class="uploaded-files-list">
+                    <div class="uploaded-file-item" id="vault-file-1" style="display: none;">
+                      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span id="vault-file-1-name">Bill_of_Lading_Draft.pdf</span>
+                      <span class="file-size">420 KB</span>
+                    </div>
+                    <div class="uploaded-file-item" id="vault-file-2" style="display: none;">
+                      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span id="vault-file-2-name">Certificate_of_Origin.pdf</span>
+                      <span class="file-size">185 KB</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Scrolling right pane containing the description steps cards -->
+        <div class="demo-scroll-pane">
+          
+          <div class="demo-step-card active" data-step="1" id="demo-step-1">
+            <span class="step-number-badge">Step 1</span>
+            <h3>Inquiry Generation</h3>
+            <p>Automate RFQ entry. Shippers input origin, destination, cargo loads, and container specifications on your brand-integrated web form. The platform instantly creates the inquiry database entry in your secure catalog.</p>
+          </div>
+
+          <div class="demo-step-card" data-step="2" id="demo-step-2">
+            <span class="step-number-badge">Step 2</span>
+            <h3>RFQ Broadcast</h3>
+            <p>Automatically distribute inquiry parameters to all partnered carrier vendors (Maersk, MSC, Hapag-Lloyd, CMA CGM) via secure API channels or structured email EDI broadcasts.</p>
+          </div>
+
+          <div class="demo-step-card" data-step="3" id="demo-step-3">
+            <span class="step-number-badge">Step 3</span>
+            <h3>Reply Analysis</h3>
+            <p>Compare carrier pricing replies as they arrive in real-time. The system parses ocean freight tariffs and highlights the most cost-efficient and optimal route, reducing analysis time by 85%.</p>
+          </div>
+
+          <div class="demo-step-card" data-step="4" id="demo-step-4">
+            <span class="step-number-badge">Step 4</span>
+            <h3>Operations Management</h3>
+            <p>Track shipping milestones from port gate-in to arrival. Operational coordinators view custom task checklists and check vessel locations instantly on a centralized map pipeline.</p>
+          </div>
+
+          <div class="demo-step-card" data-step="5" id="demo-step-5">
+            <span class="step-number-badge">Step 5</span>
+            <h3>Accounting Automation</h3>
+            <p>Instantly generate standard tax invoices and book currency ledgers when bookings are confirmed, cutting billing reconciliation cycles and manual bookkeeping errors by 90%.</p>
+          </div>
+
+          <div class="demo-step-card" data-step="6" id="demo-step-6">
+            <span class="step-number-badge">Step 6</span>
+            <h3>Client Data Vault</h3>
+            <p>Safeguard Bills of Lading, custom certificates, and packaging lists in isolated database directories. Instantly notify client portals when new trade paperwork is released.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORM CAPABILITIES & FUTURE INTEGRATIONS -->
+  <section class="section" id="capabilities">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Platform Ecosystem</span>
+        <h2 class="section-title">Comprehensive Logistics Operating System</h2>
+        <p class="section-desc">Automate every stage of the EXIM trade lifecycle. Freight Optima delivers enterprise-grade modules customized to your operational structure.</p>
+      </div>
+
+      <!-- 12 CORE SOFTWARE MODULES GRID -->
+      <div class="capabilities-grid reveal">
+        
+        <!-- Module 1: Inquiry Management -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Enquiry Management</h3>
+          <p class="cap-desc">Centralize and assign incoming EXIM trade inquiries across air, sea, and road.</p>
+          <ul class="cap-list">
+            <li>JWT authentication protected APIs</li>
+            <li>SQLite database migrations support</li>
+            <li>IMAP-based auto-ingestion of quotes</li>
+          </ul>
+          <span class="cap-benefit">Benefit: Idempotent operations, 100% visible inputs.</span>
+        </div>
+
+        <!-- Module 2: RFQ Engine -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 2 15 22 11 13 2 9 22 2"></polyline><line x1="22" y1="2" x2="11" y2="13"></line></svg>
+          </div>
+          <h3>Automated RFQ Engine</h3>
+          <p class="cap-desc">Distribute structured vendor inquiries via mail pipelines with transaction locks.</p>
+          <ul class="cap-list">
+            <li>Idempotent DB-backed mail sends</li>
+            <li>Stable, stable-ID vendor lists</li>
+            <li>Staggered automated pending reminders</li>
+          </ul>
+          <span class="cap-benefit">Benefit: Faster collections, zero metadata leaks.</span>
+        </div>
+
+        <!-- Module 3: Rate Procurement -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+          </div>
+          <h3>Rate Procurement</h3>
+          <p class="cap-desc">Centralize ocean freight, local transport, customs, and warehousing tariffs.</p>
+          <ul class="cap-list">
+            <li>Excel spreadsheets database sync</li>
+            <li>Real-time rates validity tracking</li>
+            <li>Private rates archive database</li>
+          </ul>
+          <span class="cap-benefit">Benefit: One source of truth for all rate logs.</span>
+        </div>
+
+        <!-- Module 4: Comparison Engine -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <h3>Rate Comparison</h3>
+          <p class="cap-desc">Analyze and select optimal shipping quotes side-by-side mathematically.</p>
+          <ul class="cap-list">
+            <li>Cheapest & fastest highlight logic</li>
+            <li>Multi-vendor quote comparison table</li>
+            <li>Version log review (View All Versions)</li>
+          </ul>
+          <span class="cap-benefit">Benefit: Maximum margins and transparent choices.</span>
+        </div>
+
+        <!-- Module 5: Quotation Generator -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3>Smart Quotations</h3>
+          <p class="cap-desc">Create client proposals in seconds with custom markups and multi-currency formats.</p>
+          <ul class="cap-list">
+            <li>Fixed or percent mode margin additions</li>
+            <li>Custom branding and PDF exports</li>
+            <li>Auto-incrementing multi-version logs</li>
+          </ul>
+          <span class="cap-benefit">Benefit: Locked selected shipment states, professional sheets.</span>
+        </div>
+
+        <!-- Module 6: CRM -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Customer CRM</h3>
+          <p class="cap-desc">Manage accounts databases, communications logs, and lead parameters.</p>
+          <ul class="cap-list">
+            <li>Inquiry & quote historical link</li>
+            <li>Automated follow-up reminders</li>
+            <li>Client communication logs</li>
+          </ul>
+          <span class="cap-benefit">Benefit: Improved sales visibility and client retention.</span>
+        </div>
+
+        <!-- Module 7: Quote Pipeline -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Pipeline Tracking</h3>
+          <p class="cap-desc">Track active commercial proposals from draft status to won or lost.</p>
+          <ul class="cap-list">
+            <li>Draft, sent, won, lost stage tags</li>
+            <li>Automatic expiries indicators</li>
+            <li>Quote pipeline conversion metrics</li>
+          </ul>
+          <span class="cap-benefit">Benefit: Direct visibility into sales volumes and pipelines.</span>
+        </div>
+
+        <!-- Module 8: Shipment Planning -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          </div>
+          <h3>Shipment Planning</h3>
+          <p class="cap-desc">Select route paths, balance cargo space, and schedule carriers.</p>
+          <ul class="cap-list">
+            <li>Multimodal route planning metrics</li>
+            <li>Transit duration estimations</li>
+            <li>Equipment master parameters lists</li>
+          </ul>
+          <span class="cap-benefit">Benefit: Cost reduction, safer cargo execution.</span>
+        </div>
+
+        <!-- Module 9: Document Management -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Document Management</h3>
+          <p class="cap-desc">Store shipping bills, commercial invoices, and bills of lading safely.</p>
+          <ul class="cap-list">
+            <li>Air/Ocean waybill vaults</li>
+            <li>Isolated document directory logs</li>
+            <li>Compliance checks validation</li>
+          </ul>
+          <span class="cap-benefit">Benefit: Instant document retrieval, 100% security compliance.</span>
+        </div>
+
+        <!-- Module 10: Analytics & Reports -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
+          </div>
+          <h3>Analytics & Reports</h3>
+          <p class="cap-desc">Extract margins analysis, vendor SLA speeds, and conversion rates.</p>
+          <ul class="cap-list">
+            <li>Inquiry & conversion graphics</li>
+            <li>Custom pricing benchmarks</li>
+            <li>Vendor SLA compliance reviews</li>
+          </ul>
+          <span class="cap-benefit">Benefit: Clear operational visibility and data DSR checks.</span>
+        </div>
+
+        <!-- Module 11: Alerts & Notifications -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <h3>Alerts & Notifications</h3>
+          <p class="cap-desc">Auto-notify operators of upcoming quote expiries and transit milestones.</p>
+          <ul class="cap-list">
+            <li>Quote expiry notification alarms</li>
+            <li>Shipment selection locked messages</li>
+            <li>Milestone status warnings</li>
+          </ul>
+          <span class="cap-benefit">Benefit: Reduced storage surcharges, proactive operations.</span>
+        </div>
+
+        <!-- Module 12: RBAC Security -->
+        <div class="glass-panel capability-card" data-tilt>
+          <div class="capability-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Role Access (RBAC)</h3>
+          <p class="cap-desc">Provision customized permissions across company operational groups.</p>
+          <ul class="cap-list">
+            <li>Role-based login authorization portals</li>
+            <li>Database transaction locks</li>
+            <li>Logger & health indicators sync</li>
+          </ul>
+          <span class="cap-benefit">Benefit: Team accountability and secure access.</span>
+        </div>
+
+      </div>
+
+      <!-- ROADMAP & FUTURE PLAN SPLIT -->
+      <div class="roadmap-split reveal">
+        
+        <!-- Left: AI Premium Features Card -->
+        <div class="ai-premium-card" data-tilt>
+          <div class="ai-glow-border"></div>
+          <div class="ai-card-content">
+            <div class="ai-badge-tag">AI Load Planner</div>
+            <h3>OpenAI-Powered Cargo Allocations</h3>
+            <p>Deploy advanced OpenAI prompts for sea LCL, sea FCL, air, and road truck packing layouts. Our analyzer normalizes all cargo lines to metric and maps loading constraints.</p>
+            
+            <div class="ai-features-list">
+              <div class="ai-feat-item">
+                <div class="ai-feat-icon">✦</div>
+                <div>
+                  <h4>Unit Allocation Guidance</h4>
+                  <p>Sends queries to custom OpenAI prompts mapping dimensions, quantites, weights, stackability, fragility, and upright rules to layout optimal cargo plans.</p>
+                </div>
+              </div>
+              <div class="ai-feat-item">
+                <div class="ai-feat-icon">✦</div>
+                <div>
+                  <h4>Chargeable Weights & LCL W/M</h4>
+                  <p>Calculates air chargeable weights and LCL Weight/Measurement basis alongside remaining CBM and payload details.</p>
+                </div>
+              </div>
+              <div class="ai-feat-item">
+                <div class="ai-feat-icon">✦</div>
+                <div>
+                  <h4>Validated Local Fallback Engine</h4>
+                  <p>If OpenAI output is malformed, the API automatically triggers our backup local calculations engine without surfacing errors.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Planned Integrations & Connections -->
+        <div class="glass-panel integrations-card" data-tilt>
+          <div class="integrations-header">
+            <span class="section-badge">Roadmap</span>
+            <h3>Planned Connections & APIs</h3>
+            <p>Freight Optima is designed to unify your tools. We are building direct pipeline integrations to connect your core database with standard commercial networks.</p>
+          </div>
+
+          <div class="integration-tiles-grid">
+            
+            <div class="integration-tile">
+              <div class="tile-icon">✉</div>
+              <div class="tile-details">
+                <h4>Email Clients</h4>
+                <p>Gmail & Outlook sync</p>
+              </div>
+            </div>
+
+            <div class="integration-tile">
+              <div class="tile-icon">💬</div>
+              <div class="tile-details">
+                <h4>WhatsApp API</h4>
+                <p>Auto-milestone status</p>
+              </div>
+            </div>
+
+            <div class="integration-tile">
+              <div class="tile-icon">🏢</div>
+              <div class="tile-details">
+                <h4>ERP Sync</h4>
+                <p>SAP & Oracle connections</p>
+              </div>
+            </div>
+
+            <div class="integration-tile">
+              <div class="tile-icon">⚖</div>
+              <div class="tile-details">
+                <h4>Customs Ports</h4>
+                <p>Government EXIM portals</p>
+              </div>
+            </div>
+
+            <div class="integration-tile">
+              <div class="tile-icon">🚢</div>
+              <div class="tile-details">
+                <h4>Carrier APIs</h4>
+                <p>Shipping Line/Airline link</p>
+              </div>
+            </div>
+
+            <div class="integration-tile">
+              <div class="tile-icon">🗺</div>
+              <div class="tile-details">
+                <h4>Maps Integration</h4>
+                <p>Google Maps route tracker</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ADVANTAGES / THE FREIGHT OPTIMA DIFFERENCE -->
+  <section class="section" id="advantages" style="background: rgba(8, 13, 33, 0.05);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">The Architecture</span>
+        <h2 class="section-title">Enterprise Infrastructure, Owned By You</h2>
+        <p class="section-desc">Avoid the security pitfalls of shared public clouds. We build, host, and maintain isolated software servers under your brand guidelines.</p>
+      </div>
+
+      <div class="values-grid reveal">
+        <div class="glass-panel value-card" data-tilt id="value-card-branded">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>100% White-Labeled</h3>
+          <p>Get portals displaying your corporate logo, custom fonts, and layouts. Shippers log into web domains matching your brand (e.g. tracking.yourdomain.com).</p>
+        </div>
+
+        <div class="glass-panel value-card" data-tilt id="value-card-database">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+          </div>
+          <h3>0% Shared Data</h3>
+          <p>Keep your commercial database separate. We provision individual SQL/NoSQL structures, ensuring zero overlap with other companies. Your cargo, client, and quotation data remains entirely yours.</p>
+        </div>
+
+        <div class="glass-panel value-card" data-tilt id="value-card-support">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>24h Critical Support</h3>
+          <p>Logistics never stops. If you hit an operational server issue, our standby tech support teams guarantee to respond in under 2 hours, and resolve it within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATED MD & CEO PROFILE SECTION (PROMINENT REAL ESTATE) -->
+  <section class="section ceo-section" id="ceo-vision">
+    <div class="container">
+      <div class="ceo-card glass-panel reveal" data-tilt>
+        <div class="ceo-card-glow"></div>
+        <div class="ceo-visual-wrapper">
+          <img src="assets/ceo_background.png" alt="Executive Trade Vision Map" id="ceo-visual-img">
+        </div>
+        <div class="ceo-card-content">
+          <div class="ceo-badge-tag">Executive Office</div>
+          <h3>Yajat Chordiya</h3>
+          <p class="ceo-title-label">Managing Director & CEO, Freight Optima</p>
+          <div class="ceo-quote-box">
+            "We believe that import-export enterprises should not conform their operational workflows to fit rigid, generic off-the-shelf software. We build bespoke software hosted on isolated databases, keeping complete control of critical corporate intelligence where it belongs — in your hands."
+          </div>
+          <p class="ceo-vision-desc">
+            Under Yajat Chordiya's leadership, Freight Optima has pioneered custom-branded logistics infrastructure. By combining standard core components like inquiries, billing, and document safe vaults with dedicated hardware resources, we guarantee unmatched system speeds, tailored AI analysis models, and absolute corporate security.
+          </p>
+          <div class="ceo-action-area">
+            <a href="#contact" class="btn btn-primary">Schedule CEO Consultation</a>
+            <div class="ceo-email-cta">
+              <h4>Direct Inquiries</h4>
+              <p><a href="mailto:yajat0747@gmail.com" class="gradient-text">yajat0747@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING / SUBSCRIPTIONS -->
+  <section class="section" id="pricing" style="background: rgba(8, 13, 33, 0.05);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge">Pricing Model</span>
+        <h2 class="section-title">Aligned With Your Operation</h2>
+        <p class="section-desc">Straightforward licensing with only a one-time deployment setup fee and flexible user per month subscription packages. No transaction limits.</p>
+      </div>
+
+      <div class="pricing-grid reveal">
+        <!-- 3 Users -->
+        <div class="glass-panel pricing-card" data-tilt id="pricing-card-3users">
+          <div class="pricing-card-header">
+            <h3>Starter Tier</h3>
+            <p class="pricing-card-desc">Designed for logistics agencies or boutique import-export desks.</p>
+            <div class="price-display">
+              <span class="price-text">3 Users</span>
+              <span class="price-subtext">/ month subscription</span>
+            </div>
+          </div>
+          <div class="pricing-features-list">
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Branded core web platform</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Dedicated SQL database setup</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Inquiry registration & Quotations</span>
+            </div>
+            <div class="pricing-feature-item disabled">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Custom AI Predictive Models</span>
+            </div>
+            <div class="pricing-feature-item disabled">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Isolated database clusters</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-secondary">Request Starter</a>
+        </div>
+
+        <!-- 5 Users -->
+        <div class="glass-panel pricing-card" data-tilt id="pricing-card-5users">
+          <div class="pricing-card-header">
+            <h3>Growth Tier</h3>
+            <p class="pricing-card-desc">For expanding logistics teams requiring operations tracking and client portal.</p>
+            <div class="price-display">
+              <span class="price-text">5 Users</span>
+              <span class="price-subtext">/ month subscription</span>
+            </div>
+          </div>
+          <div class="pricing-features-list">
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>White-label platform branding</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Dedicated database infrastructure</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Inquiry, Quotations & Operations</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Client portal CRM integrations</span>
+            </div>
+            <div class="pricing-feature-item disabled">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Custom AI Predictive Models</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-secondary">Request Growth</a>
+        </div>
+
+        <!-- 10 Users / Custom Models -->
+        <div class="glass-panel pricing-card premium-tier" data-tilt id="pricing-card-custom">
+          <div class="pricing-badge">Recommended</div>
+          <div class="pricing-card-header">
+            <h3>Enterprise Suite</h3>
+            <p class="pricing-card-desc">For large companies requiring full automation, billing systems, and custom AI.</p>
+            <div class="price-display">
+              <span class="price-text">10+ Users</span>
+              <span class="price-subtext">/ custom configs</span>
+            </div>
+          </div>
+          <div class="pricing-features-list">
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Unlimited Customer Portal logins</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Full suite: Inquiries, CRM, Billing & Ops</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Custom Tailored Machine Learning Models</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>High-availability database replication</span>
+            </div>
+            <div class="pricing-feature-item">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>24/7 dedicated support phone hotline</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & INQUIRY FORM -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-info-header">
+            <span class="section-badge">Get In Touch</span>
+            <h3>Schedule a Software Review</h3>
+            <p>Connect with our technical design team to scope out your White-Label deployment, custom database parameters, and user capacity requirements.</p>
+          </div>
+
+          <div class="contact-details">
+            <div class="glass-panel contact-detail-card" id="contact-card-ceo">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="contact-text-box">
+                <h4>Managing Director & CEO</h4>
+                <p>Yajat Chordiya</p>
+              </div>
+            </div>
+
+            <div class="glass-panel contact-detail-card" id="contact-card-email">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-text-box">
+                <h4>Direct Executive Email</h4>
+                <p><a href="mailto:yajat0747@gmail.com" class="gradient-text">yajat0747@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="glass-panel contact-detail-card" id="contact-card-support">
+              <div class="contact-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="contact-text-box">
+                <h4>Support Guarantee</h4>
+                <p>24-Hour Critical Issue SLA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-panel contact-form reveal" id="inquiry-form-container">
+          <form id="inquiry-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-company">Company Name</label>
+                <input type="text" id="contact-company" class="form-control" placeholder="Global Logistics Inc." required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Corporate Email</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="john@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-plan">Preferred Subscription Model</label>
+              <select id="contact-plan" class="form-control">
+                <option value="starter">Starter Tier (3 Users / month)</option>
+                <option value="growth">Growth Tier (5 Users / month)</option>
+                <option value="enterprise" selected>Enterprise Suite (10+ Users / custom)</option>
+                <option value="custom">Custom Tailored Model Development</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Workflow Requirements & Ambitions</label>
+              <textarea id="contact-message" class="form-control" placeholder="Briefly describe your database requirements, workflow bottlenecks, and customization objectives..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn-submit-form">
+              Submit Inquiry
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+            <div class="form-status" id="form-status-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo-area">
+          <a href="#" class="logo">
+            <img src="assets/logo.png" alt="Freight Optima Logo" class="logo-img">
+          </a>
+          <p>Custom-branded logistics SaaS environments and isolated SQL/NoSQL architectures built exclusively for import-export leaders.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Core Solutions</h4>
+          <ul>
+            <li><a href="#features">Inquiry & Quotations</a></li>
+            <li><a href="#features">Operations & Data Vault</a></li>
+            <li><a href="#features">Clients & accounts CRM</a></li>
+            <li><a href="#features">Custom AI Models</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Corporate Info</h4>
+          <ul>
+            <li>Managing Director: Yajat Chordiya</li>
+            <li>Email: <a href="mailto:yajat0747@gmail.com">yajat0747@gmail.com</a></li>
+            <li>SLA Support: 24h Issue Resolution</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Freight Optima. All rights reserved.</p>
+        <p>MD & CEO: Yajat Chordiya</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
